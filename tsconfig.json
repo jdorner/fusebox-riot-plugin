@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "target": "es5",
+      "outDir": "lib/",
+      "declaration": true,
+      "sourceMap": true,
+      "lib": ["dom","es6"]
+  },
+  "include": [
+      "src/**/*.ts"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false
+}

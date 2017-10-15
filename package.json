@@ -1,0 +1,26 @@
+{
+  "name": "fusebox-riot-plugin",
+  "version": "1.0.0",
+  "license": "ISC",
+  "main": "./lib",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "deploy": "yarn run build && git push origin --all && yarn publish"
+  },
+  "keywords": [
+    "riot",
+    "fuse-box"
+  ],
+  "dependencies": {
+    "@types/node": "^8.0.0",
+    "riot-compiler": "^3.2.5"
+  },
+  "devDependencies": {
+    "fuse-box": "^2.3.3",
+    "typescript": "^2.5.3"
+  },
+  "peerDependencies": {
+    "fuse-box": "^2.3.3"
+  }
+}
