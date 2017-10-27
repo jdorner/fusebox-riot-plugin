@@ -28,7 +28,7 @@ export class RiotPluginClass implements Plugin {
     public options: RiotPluginOptions;
 
     /**
-     * @param {Object} options - Options for coffee compiler
+     * @param {Object} options - Options for Riot compiler
      */
     constructor(options: RiotPluginOptions = {}) {
         this.options = Object.assign({}, options);
