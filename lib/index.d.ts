@@ -22,7 +22,7 @@ export declare class RiotPluginClass implements Plugin {
     context: WorkFlowContext;
     options: RiotPluginOptions;
     /**
-     * @param {Object} options - Options for coffee compiler
+     * @param {Object} options - Options for Riot compiler
      */
     constructor(options?: RiotPluginOptions);
     init(context: WorkFlowContext): void;

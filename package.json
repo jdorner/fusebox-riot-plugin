@@ -1,6 +1,6 @@
 {
   "name": "fusebox-riot-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "ISC",
   "main": "./lib",
   "repository": "https://github.com/jdorner/fusebox-riot-plugin",
