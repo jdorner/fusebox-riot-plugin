@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "license": "ISC",
   "main": "./lib",
+  "repository": "https://github.com/jdorner/fusebox-riot-plugin",
+  "author": {
+    "name": "Joachim Dorner"
+  },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
