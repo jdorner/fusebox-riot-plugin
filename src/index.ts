@@ -55,7 +55,15 @@ export class RiotPluginClass implements Plugin {
 
         return new Promise((res, rej) => {
             try {
-                file.contents = riot.compile(file.contents, this.options);
+                let result = riot.compile(file.contents, this.options, file.info.absPath);
+                if (result.code) {
+                    file.contents = result.code;
+                    file.sourceMap = result.map.toString();
+                } else {
+                    file.contents = result;
+                    file.sourceMap = '';
+                }
+
                 if (this.context.useCache) {
                     this.context.emitJavascriptHotReload(file);
                     this.context.cache.writeStaticCache(file, file.sourceMap, 'js');
