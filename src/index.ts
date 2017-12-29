@@ -61,7 +61,6 @@ export class RiotPluginClass implements Plugin {
                     file.sourceMap = result.map.toString();
                 } else {
                     file.contents = result;
-                    file.sourceMap = '';
                 }
 
                 if (this.context.useCache) {
