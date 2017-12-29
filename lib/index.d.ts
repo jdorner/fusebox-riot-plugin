@@ -9,6 +9,7 @@ export interface RiotPluginOptions {
     style?: string;
     entities?: boolean;
     exclude?: Array<string>;
+    sourcemap?: boolean;
 }
 /**
  * This plugin compiles Riot tag files to JavaScript

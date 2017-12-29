@@ -9,7 +9,8 @@ export interface RiotPluginOptions {
     type?: string,
     style?: string,
     entities?: boolean,
-    exclude?: Array<string>
+    exclude?: Array<string>,
+    sourcemap?: boolean
 }
 
 let riot;
